@@ -8,10 +8,9 @@ const MovieCard = ({ movie }) => {
       <div className="movie-poster">
         <img src={movie.poster} alt={movie.title} />
         <div className="movie-overlay">
-          <button
-            className="favourite-btn"
-            onClick={handleFavouriteClick}
-          ></button>
+          <button className="favourite-btn" onClick={handleFavouriteClick}>
+            ♥
+          </button>
         </div>
       </div>
     </div>

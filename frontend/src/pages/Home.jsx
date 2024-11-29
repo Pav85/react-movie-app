@@ -49,7 +49,8 @@ const Home = () => {
 
   const handleSearch = (e) => {
     e.preventDefault();
-    console.log("Search button clicked");
+    alert(`Searching for ${searchQuery}`);
+    setSearchQuery("");
   };
 
   const handleChange = (e) => {

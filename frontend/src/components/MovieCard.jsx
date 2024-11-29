@@ -1,6 +1,8 @@
+import PropTypes from "prop-types";
+
 const MovieCard = ({ movie }) => {
   const handleFavouriteClick = () => {
-    console.log("Favourite button clicked");
+    console.log("Favorite button clicked");
   };
 
   return (
@@ -19,6 +21,14 @@ const MovieCard = ({ movie }) => {
       </div>
     </div>
   );
+};
+
+MovieCard.propTypes = {
+  movie: PropTypes.shape({
+    poster: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    release_date: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default MovieCard;

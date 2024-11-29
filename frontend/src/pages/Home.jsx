@@ -57,10 +57,6 @@ const Home = () => {
     setSearchQuery(e.target.value);
   };
 
-  const filteredMovies = movies.filter((movie) =>
-    movie.title.toLowerCase().includes(searchQuery.toLowerCase())
-  );
-
   return (
     <div className="home">
       <form className="search-form" onSubmit={handleSearch}>
@@ -76,13 +72,9 @@ const Home = () => {
         </button>
       </form>
       <div className="movies-grid">
-        {filteredMovies.length > 0 ? (
-          filteredMovies.map((movie) => (
-            <MovieCard key={movie.id} movie={movie} />
-          ))
-        ) : (
-          <p>No movies found.</p>
-        )}
+        {movies.map((movie) => (
+          <MovieCard key={movie.id} movie={movie} />
+        ))}
       </div>
     </div>
   );

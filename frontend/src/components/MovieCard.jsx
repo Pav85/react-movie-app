@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import "../css/MovieCard.css";
 
 const MovieCard = ({ movie }) => {
   const handleFavouriteClick = () => {

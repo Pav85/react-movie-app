@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import "../css/MovieCard.css";
 
 const MovieCard = ({ movie }) => {
-  const handleFavouriteClick = () => {
+  const handleFavoriteClick = () => {
     console.log("Favorite button clicked");
   };
 
@@ -11,7 +11,7 @@ const MovieCard = ({ movie }) => {
       <div className="movie-poster">
         <img src={movie.poster} alt={movie.title} />
         <div className="movie-overlay">
-          <button className="favorite-btn" onClick={handleFavouriteClick}>
+          <button className="favorite-btn" onClick={handleFavoriteClick}>
             ♥
           </button>
         </div>

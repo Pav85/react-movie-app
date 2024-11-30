@@ -11,7 +11,7 @@ const MovieCard = ({ movie }) => {
       <div className="movie-poster">
         <img src={movie.poster} alt={movie.title} />
         <div className="movie-overlay">
-          <button className="favourite-btn" onClick={handleFavouriteClick}>
+          <button className="favorite-btn" onClick={handleFavouriteClick}>
             ♥
           </button>
         </div>

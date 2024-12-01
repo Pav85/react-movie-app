@@ -1,7 +1,13 @@
 import PropTypes from "prop-types";
+import { useContext } from "react";
+import { MovieProvider } from "../contexts/MovieProvider";
+import { useMovieContext } from "../contexts/useMovieContext";
 import "../css/MovieCard.css";
 
 const MovieCard = ({ movie }) => {
+  const { isFavorite, addToFavorites, removeFromFavorites } = useMovieContext();
+
+  useContext(MovieProvider);
   const handleFavoriteClick = () => {
     console.log("Favorite button clicked");
   };

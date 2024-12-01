@@ -1,12 +1,10 @@
-import { createContext, useContext, useState, useEffect } from "react";
+import { createContext, useState, useEffect } from "react";
+import PropTypes from "prop-types";
 
 const MovieContext = createContext();
 
-export const useMovieContext = () => useContext(MovieContext);
-
 export const MovieProvider = ({ children }) => {
   const [favorites, setFavorites] = useState([]);
-  4;
 
   useEffect(() => {
     const storedFavorites = localStorage.getItem("favorites");
@@ -42,3 +40,9 @@ export const MovieProvider = ({ children }) => {
     <MovieContext.Provider value={value}>{children}</MovieContext.Provider>
   );
 };
+
+MovieProvider.propTypes = {
+  children: PropTypes.node.isRequired,
+};
+
+export { MovieContext };

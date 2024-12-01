@@ -40,8 +40,6 @@ const Home = () => {
     } finally {
       setLoading(false);
     }
-
-    setSearchQuery("");
   };
 
   const handleChange = (e) => {

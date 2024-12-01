@@ -6,8 +6,8 @@ import Favorites from "./pages/Favorites";
 import Home from "./pages/Home";
 
 const App = () => {
-  const apiKey = import.meta.env.VITE_API_KEY;
-  console.log("API Key:", apiKey);
+  // const apiKey = import.meta.env.VITE_API_KEY;
+  // console.log("API Key:", apiKey);
 
   return (
     <div>

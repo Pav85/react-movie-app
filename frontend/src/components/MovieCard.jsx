@@ -1,15 +1,18 @@
 import PropTypes from "prop-types";
-import { useContext } from "react";
-import { MovieProvider } from "../contexts/MovieProvider";
 import { useMovieContext } from "../contexts/useMovieContext";
 import "../css/MovieCard.css";
 
 const MovieCard = ({ movie }) => {
   const { isFavorite, addToFavorites, removeFromFavorites } = useMovieContext();
+  const favorite = isFavorite(movie.id);
 
-  useContext(MovieProvider);
-  const handleFavoriteClick = () => {
-    console.log("Favorite button clicked");
+  const handleFavoriteClick = (e) => {
+    e.preventDefault();
+    if (favorite) {
+      removeFromFavorites(movie.id);
+    } else {
+      addToFavorites(movie);
+    }
   };
 
   return (
@@ -25,7 +28,10 @@ const MovieCard = ({ movie }) => {
         />
 
         <div className="movie-overlay">
-          <button className="favorite-btn" onClick={handleFavoriteClick}>
+          <button
+            className={`favorite-btn ${favorite ? "active" : ""}`}
+            onClick={handleFavoriteClick}
+          >
             ♥
           </button>
         </div>

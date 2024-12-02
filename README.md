@@ -53,3 +53,37 @@ npm run dev
 Visit the app in your browser at the address provided in the terminal (usually http://localhost:5173).
 
 ## Deployment
+
+The app is live at: [My Movie List](https://pav85.github.io/my-movie-list/)
+
+Here’s a preview of the app:
+
+![My Movie List Preview](./src/assets/screenshot.png)
+
+---
+
+## Resources
+
+- **API**: [TMDB API](https://www.themoviedb.org/documentation/api)
+- **Technologies**: React, Vite, JavaScript, CSS
+
+---
+
+## Contributing
+
+Contributions are welcome! Fork this repository and submit a pull request with your changes.
+
+---
+
+## Questions
+
+For any questions or inquiries, feel free to reach out via email or GitHub:
+
+- **Email**: [pawel-werbowy@gmail.com](mailto:pawel-werbowy@gmail.com)
+- **GitHub**: [Pav85](https://github.com/pav85)
+
+---
+
+## License
+
+This project is licensed under the MIT License.

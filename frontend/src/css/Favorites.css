@@ -48,3 +48,20 @@
 .movies-grid > * {
   animation: fadeIn 0.3s ease-out forwards;
 }
+
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.favorites .movies-grid {
+  justify-content: center;
+}
+
+.movie-card {
+  max-width: 340px;
+  margin: 0 auto;
+}

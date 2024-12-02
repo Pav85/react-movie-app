@@ -5,11 +5,9 @@ import Navbar from "./components/Navbar";
 import Favorites from "./pages/Favorites";
 import Home from "./pages/Home";
 
-import { MovieProvider } from "./contexts/MovieProvider";
-
 const App = () => {
   return (
-    <MovieProvider>
+    <div>
       <Navbar />
       <main className="main-content">
         <Routes>
@@ -17,7 +15,7 @@ const App = () => {
           <Route path="/favorites" element={<Favorites />} />
         </Routes>
       </main>
-    </MovieProvider>
+    </div>
   );
 };
 

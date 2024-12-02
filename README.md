@@ -8,7 +8,7 @@
 
 ## Description
 
-**My Movie List** is a React-based application built using **Vite** for faster development and performance. The app allows users to search for movies using the TMDB API, save their favorite movies, and manage them from a dedicated "Favorites" page. The app also includes a powerful search engine to find any movie by title and add it to the favorites list. Users can easily add or remove movies from their favorites, making this app a handy tool for movie enthusiasts.
+**My Movie List** is an app that lets users search for movies and save their favorites to a dedicated "Favorites" page. Users can easily add or remove movies from their favorites, making it a great tool for organizing and keeping track of movies they love.
 
 ---
 
@@ -25,6 +25,7 @@
 ## Table of Contents
 
 - **[Installation](#installation)**
+- **[TMDB API Key Setup](#setup)**
 - **[Usage](#usage)**
 - **[Deployment](#deployment)**
 - **[Resources](#resources)**
@@ -42,6 +43,18 @@ To install the necessary dependencies, clone the repository and run the followin
 npm install
 ```
 
+## Setup
+
+This app uses the TMDB API to fetch movie data. To use the app, you'll need to obtain your own API key:
+
+1. Create a free account at [TMDB](https://www.themoviedb.org/).
+2. Navigate to your [API settings](https://www.themoviedb.org/settings/api) and request an API key.
+3. Once you have your API key, create a `.env` file in the project root and add the following line:
+
+   ```bash
+   VITE_API_KEY=your_api_key_here
+   ```
+
 ## Usage
 
 To start the app locally with Vite, run:
@@ -54,11 +67,11 @@ Visit the app in your browser at the address provided in the terminal (usually h
 
 ## Deployment
 
-The app is live at: [My Movie List](https://pav85.github.io/my-movie-list/)
+The app is live at: [My Movie List](https://pav85.github.io/react-movie-app/)
 
 Here’s a preview of the app:
 
-![My Movie List Preview](./src/assets/screenshot.png)
+![My Movie List Preview](./frontend/public/app-screenshot.png)
 
 ---
 
